@@ -1,0 +1,99 @@
+.container{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+
+  .cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+.card{
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow : 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 250px;
+  overflow-y: scroll;
+  ::-webkit-scrollbar{
+      display: none;
+  }
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+
+  .card-title{
+      background: linear-gradient(45deg, #5a88bd, #feb47b);
+      -webkit-background-clip: text;
+      color: transparent;
+  }
+
+  .icon{
+      height: 20px;
+  }
+
+  .residents{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    height: 100%;
+  }
+
+}
+
+.residentInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(45deg, #b3cff0, #f1ddce);
+  margin: 10px 0px;
+  padding: 8px;
+  border-radius: 5px;
+
+  p{
+    margin: 0%;
+  }
+
+  .card-resident-title{
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+  }
+}
+
+.residentInfo > div{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.residentInfo > div > span{
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0px;
+}
+
+.pagination{
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px;
+  height: 50px;
+  border-radius: 5px;
+  > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  }
+}
+
